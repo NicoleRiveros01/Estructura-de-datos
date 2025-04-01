@@ -32,4 +32,5 @@ $ropa[3]="bufanda";
 print_r($ropa);
 
 
+
 ?>

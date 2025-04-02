@@ -7,7 +7,7 @@ class Nodo{
     public $siguiente;
 
       public function __construct($dato) {
-        $this->$dato = $dato;
+        $this->dato = $dato;
         $this ->siguiente = null;
     }
 }

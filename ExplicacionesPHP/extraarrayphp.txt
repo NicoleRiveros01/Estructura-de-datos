@@ -1,0 +1,17 @@
+extraarray.php
+
+se comienza con un arreglo llamado $ropa que contiene algunos elementos como 
+-"camisa"
+-"pantalón"
+-"zapatos"
+-"medias"
+
+Luego, se añade un nuevo ítem, "gorra", al final del arreglo usando $ropa[] = "gorra";
+Este es un truco fácil para agregar algo al final sin preocuparse por el índice.
+
+Después, se realiza un cambio específico en el arreglo. Usando $ropa[3] = "bufanda"; , se está reemplazando el valor en la posición 3 que originalmente era "medias" por "bufanda". Esto permite actualizar cualquier elemento de un arreglo en PHP de manera directa.
+
+Luego, se utiliza array_slice() para crear un subarreglo a partir de $ropa. La función array_slice($ropa, 1, 2) toma una porción del arreglo original comenzando desde el índice 1 el segundo elemento y extrae 2 elementos. En este caso, toma "pantalon" y "zapatos" y los guarda en $ropaseleccionado. Después, imprimir este subarreglo con print_r($ropaseleccionados); para ver los resultados.
+
+Este código demuestra varias operaciones que pueden hacer arreglos con PHP, como agregar, modificar y extraer porciones específicas. Es útil cuando necesitas manipular y procesar datos de diferentes maneras dentro de un mismo arreglo.
+

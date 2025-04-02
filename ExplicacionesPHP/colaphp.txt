@@ -1,0 +1,15 @@
+cola.php
+
+Este código maneja una cola en PHP, es una estructura de datos en la que los elementos se agregan al final y se sacan desde el principio como una fila en una tienda, donde las primeras personas que entran son las primeras en salir.
+
+principalmente se crea un arreglo vacío llamado $cola. Luego, empiezas a agregar cartas a la cola usando la función array_push(). Cada vez que se llama a array_push, se añade un nuevo elemento al final del arreglo. En este caso, se van añadiendo varias cartas:
+-"carta 1"
+-"carta 2"
+-"carta 3", etc...
+hasta que hay 9 cartas en total en la cola.
+
+Luego, con la función array_shift(), se elimina el primer elemento del arreglo. Esta función toma el primer elemento de la cola en este caso. "carta 1" y lo guarda en la variable $carta. Es como si la primera fila se fuera, y ahora se imprime cuál fue la primera carta que llegó.
+En este caso, el mensaje que se imprime será: "La primer carta que llegó a la cola fue carta 1".
+
+Este ejemplo ilustra cómo funciona una estructura de tipo cola en la que los elemento entran por un lado y salen por el otro, con la ayuda de array_push() para añadir y array_shift() para quitar el primer elemento. Es bastante útil cuando necesitas procesar elementos en el orden en que llegan.
+

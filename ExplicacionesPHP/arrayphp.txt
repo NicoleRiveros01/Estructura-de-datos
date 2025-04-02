@@ -1,0 +1,19 @@
+array.php
+
+Este código es un ejemplo de como manejar arreglos en PHP. Al comienzo, hay un arreglo llamado $ropa que contiene elementos como: 
+-"camisa"
+-"pantalón"
+-"zapatos"
+-"medias"
+Luego, el código agrega un nuevo artículo al final de este arreglo
+-"gorra"
+Para hacerlo, se usa la sintaxis $ropa[] = "gorra"; 
+lo que es una manera rápida de añadir elementos sin preocuparse por el índice.
+
+
+Después, el código pasa a una parte en la que elimina un artículo del arreglo.
+Se borra "zapatos". Lo primero que hace es buscar el índice de ese elemento con la función array_search() .Esta función devuelve la posición (índice) de "zapatos" dentro del arreglo. Si encuentra el artículo, devuelve su índice, y si no lo encuentra, devuelve false.
+
+Con el índice en mano, la función unset() se usa para eliminar el artículo en esa posición, es decir, elimina "zapatos" del arreglo. Al final, el código imprime el arreglo actualizado usando print_r(), para que se vea el resultado después de añadir y eliminar elementos.
+
+Es un código bastante sencillo, pero muestra cómo se puede manipular dinámicamente el contenido de un arreglo en PHP, añadiendo o eliminando elementos cuando lo necesite.

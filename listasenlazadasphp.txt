@@ -1,8 +1,0 @@
-listasenlazadas.php
-
-Este código crea una estructura de lista enlazada en PHP. Tienes dos clases: la clase Nodo, que es como un eslabón de una cadena, donde cada nodo guarda un dato y un enlace al siguiente nodo. Cuando se crea un nodo, le das un valor para el dato y el puntero al siguiente nodo se establece como null, porque al principio no hay más nodos.
-
-Luego, está la clase listasenlazadas, que representa la lista completa. Dentro de esta clase, tienes una propiedad llamada $cabeza, que es básicamente el primer nodo de la lista. Al principio, se establece como null porque la lista comienza vacía.
-
-
-Así que, lo que tiene ahí es la base de una lista enlazada: cada nodo tiene un dato y apunta al siguiente, y la lista en sí empieza con una cabeza vacía. Esto te permite agregar, eliminar o modificar nodos de forma flexible más adelante.

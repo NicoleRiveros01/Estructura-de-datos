@@ -1,0 +1,10 @@
+modifarray.php
+
+El código empieza con un arreglo llamado $ropa, que contiene varios artículos de ropa.
+Luego, se añade de un nuevo ítem, "gorra", al final del arreglo usando $ropa[] = "gorra"; . Esto es una forma sencilla de agregar elementos al final de un arreglo en PHP.
+
+Después, el código reemplaza el elemento en la posición 3 del arreglo que originalmente era "medias" por "bufanda". Esto se hace directamente con $ropa[3] = "bufanda"; , modificando el valor de ese índice específico.
+
+Finalmente, el arreglo actualizado se imprime con print_r($ropa); , mostrando cómo quedó el arreglo después de añadir y modificar elementos.
+
+Este código ilustra cómo puedes agregar, modificar y ver los cambios en un arreglo de manera directa en PHP.

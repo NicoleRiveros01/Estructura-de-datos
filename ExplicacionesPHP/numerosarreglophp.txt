@@ -1,0 +1,10 @@
+numerosarreglo.php
+
+El código comienza con un arreglo $numeros que tiene algunos valores. Luego, se utiliza la función array_filter() para filtrar los números que sean menores o iguales a 4. La función array_filter() recorre todos los elementos del arreglo y aplica la condición definida en la función anónima. En este cas, la condición es que el valor del números debe ser menor o igual a 4.
+
+La función anónima (function($valor) :bool{ return $valor <= 4;}) evalúa cada número y, si cumple con la condición, lo incluye en el nuevo arreglo $numerosFiltrar.
+
+Finalmente, el código imprime el resultado del filtro con print_r($numerosFiltrar); ,  mostrando solo los números que cumplen la condición, que en este caso serán los números 4 y 5.
+
+Resumidamente, este código filtra los valores de un arreglo según una condición específica y muestra los que cumplen con esa condición.
+

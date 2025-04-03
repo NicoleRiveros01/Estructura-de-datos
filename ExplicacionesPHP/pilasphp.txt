@@ -1,0 +1,12 @@
+pilas.php
+
+Este código utiliza una pila también conocida como stack, que es una estructura de datos donde el último elemento que se agrega el es primero en salir (LIFO,"Last ln, First Out").
+
+Primero, se crea un arreglo vacío llamado $pila, y luego se añaden varios elementos usando la función array_push(). Cada llamada a array_push() agrega un nuevo elemento al final de la pila, como "elemento 1", "elemento 2", y así hasta "elemento 9".
+
+
+Después +, se usa array_pop para eliminar y obtener el último elemento que fue agregado a la pila, en este caso, "elemento 9". Este es el comportamiento típico de una pila: el último en entrar es el primero en salir.
+
+Finalmente, se imprime el valor del elemento eliminado con echo, mostrando que el último elemento ingresado a la pila fue "elemento 9".
+
+En resumen, este código demuestra cómo puedes agregar y eliminar elementos de una pila, donde siempre se elimina el último elemento ingresado.

@@ -1,0 +1,7 @@
+ordenararray.php
+
+Este código tiene un arreglo asociativo $edades, donde las claves son los nombres ("Carlos", "maria", "juan") y los valores son las edades correspondientes. La función asort() se usa para ordenar el arreglo por los valores, es decir, las edades, en orden ascendente, pero manteniendo las claves asociadas.
+
+Finalmente, se usa print_r($edades); para mostrar el arreglo ordenado. El resultado será un listado de los nombres con sus edades, pero ahora en orden creciente según las edades.
+
+Este código te da forma de ordenar un arreglo asociativo por los valores sin perder la relación entre las claves y sus respectivos valores.

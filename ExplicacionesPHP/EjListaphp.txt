@@ -1,0 +1,19 @@
+EjLista
+
+Este proyecto crea una lista enlazada muy simple que guarda una lista de productos. Cada producto se guarda dentro de un nodo, que tiene dos cosas: el nombre del producto y un enlace al siguiente nodo.
+
+Usamos dos clases:
+
+Producto: representa cada elemento de la lista (como "Manzanas" o "Pan").
+
+ListaProductos: controla toda la lista. Puede agregar productos al inicio y mostrar todos en HTML como una lista <ul>.
+
+Cada vez que agregas un producto, se coloca al principio de la lista. Por eso, si agregas "Leche", "Pan" y después "Manzanas", la lista se va a mostrar así:
+
+-Manzanas
+
+-Pan
+
+-Leche
+
+El método mostrarHTML() recorre toda la lista desde el primero hasta el último producto, y los muestra en pantalla dentro de una lista HTML.

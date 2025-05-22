@@ -1,0 +1,17 @@
+Este código en PHP implementa una lista enlazada simple, una estructura de datos lineal en la que cada elemento (llamado nodo) apunta al siguiente, formando una cadena. Es útil cuando se necesita insertar o eliminar elementos de forma dinámica sin preocuparse por el tamaño fijo de un arreglo.
+
+La clase Nodo representa cada elemento de la lista. Tiene dos propiedades:
+
+$dato: almacena el contenido del nodo.
+
+$siguiente: apunta al siguiente nodo de la lista (o null si es el último).
+
+La clase ListaEnlazada gestiona la lista.
+
+La propiedad $cabeza guarda la referencia al primer nodo de la lista.
+
+El método insertar($dato) agrega un nuevo nodo al inicio de la lista. El nuevo nodo apunta al que antes era la cabeza, y luego se convierte en la nueva cabeza.
+
+El método imprimirHTML() recorre la lista desde la cabeza y muestra cada dato dentro de una lista HTML (<ul>), generando una salida web estructurada.
+
+Al final, se crea una lista, se insertan tres elementos y se imprimen como una lista HTML. Debido al orden de inserción, el último elemento insertado aparece primero. Esta estructura es útil para representar colecciones dinámicas de elementos, especialmente cuando se necesitan muchas inserciones o eliminaciones al principio de la lista.

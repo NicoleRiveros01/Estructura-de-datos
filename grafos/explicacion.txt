@@ -1,50 +1,22 @@
-<?php
+Este código en PHP crea e implementa un grafo no dirigido, es decir, una estructura que permite representar relaciones entre elementos. A continuación se explica qué hace cada parte y para qué sirve:
 
-class Grafo {
+La clase Grafo define toda la estructura del grafo. Dentro de ella hay dos propiedades principales:
 
-    public $vertices;
-    public $aristas;
+$vertices: almacena una lista de todos los vértices o nodos del grafo.
 
-    public function __construct() {
-        $this->vertices = array();
-        $this->aristas = array();
-    }
+$aristas: guarda las conexiones entre los vértices. Es un arreglo asociativo donde cada vértice tiene una lista de sus conexiones.
 
-    public function agregarVertice($vertice) {
-        $this->vertices[] = $vertice;
-        $this->aristas[$vertice] = array();
-    }
+El método __construct() inicializa el grafo, creando los arreglos vacíos para los vértices y las aristas.
+El método agregarVertice($vertice) sirve para añadir un nuevo nodo al grafo. También crea una entrada vacía en el arreglo de aristas para poder registrar sus conexiones más adelante.
+El método agregarArista($vertice1, $vertice2) crea una conexión entre dos vértices. Como es un grafo no dirigido, la conexión se guarda en ambas direcciones (de $vertice1 a $vertice2 y viceversa).
+El método imprimirGrafo() recorre todos los vértices y muestra a qué otros vértices están conectados, lo que permite visualizar la estructura del grafo.
 
-    public function agregarArista($vertice1, $vertice2) {
-        $this->aristas[$vertice1][] = $vertice2;
-        $this->aristas[$vertice2][] = $vertice1;
-    }
+Al final del código, se crea un objeto del tipo Grafo, se agregan los vértices A, B, C y D, y se conectan entre ellos con aristas. Luego se imprime el grafo mostrando cómo está formado. Este tipo de estructura es útil para representar problemas donde hay relaciones o caminos entre elementos, como rutas, redes de computadoras, mapas, etc.
 
-    public function imprimirGrafo() {
-        foreach ($this->vertices as $vertice) {
-            echo $vertice . " -------> ";
-            foreach ($this->aristas[$vertice] as $item) {
-                echo $item . "--->";
-            }
-            echo ".\n";
-        }
-    }
-}
 
-// Crear grafo y agregar vértices y aristas
-$miGrafo = new Grafo();
 
-$miGrafo->agregarVertice("A");
-$miGrafo->agregarVertice("B");
-$miGrafo->agregarVertice("C");
-$miGrafo->agregarVertice("D");
 
-$miGrafo->agregarArista("A", "B");
-$miGrafo->agregarArista("B", "C");
-$miGrafo->agregarArista("C", "A");
-$miGrafo->agregarArista("B", "D");
 
-echo "EL GRAFO CREADO ES:\n";
-$miGrafo->imprimirGrafo();
 
-?>
+
+

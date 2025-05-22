@@ -1,14 +1,17 @@
-Este código en PHP crea e implementa un grafo no dirigido, es decir, una estructura que permite representar relaciones entre elementos. A continuación se explica qué hace cada parte y para qué sirve:
+Este código en PHP implementa un árbol binario de búsqueda (ABB), una estructura de datos jerárquica que organiza los elementos de forma que cada nodo tiene como máximo dos hijos: uno izquierdo y uno derecho. El objetivo principal de este tipo de árbol es permitir inserciones, búsquedas y recorridos de manera eficiente.
 
-La clase Grafo define toda la estructura del grafo. Dentro de ella hay dos propiedades principales:
+Primero, se define la clase Nodo, que representa cada elemento del árbol. Cada nodo tiene un valor, una referencia a su hijo izquierdo y una a su hijo derecho. El constructor inicializa estos valores y establece los hijos como null.
 
-$vertices: almacena una lista de todos los vértices o nodos del grafo.
+Luego, la clase ArbolBinario gestiona el árbol. Su propiedad privada $raiz indica el punto de inicio del árbol. En su constructor, la raíz comienza vacía.
 
-$aristas: guarda las conexiones entre los vértices. Es un arreglo asociativo donde cada vértice tiene una lista de sus conexiones.
+El método insertar($valor) agrega un nuevo valor al árbol. Llama internamente al método recursivo insertarRec($nodo, $valor), que compara el valor con el del nodo actual y decide si debe ir a la izquierda (si es menor) o a la derecha (si es mayor o igual), manteniendo así el orden del árbol.
 
-El método __construct() inicializa el grafo, creando los arreglos vacíos para los vértices y las aristas.
-El método agregarVertice($vertice) sirve para añadir un nuevo nodo al grafo. También crea una entrada vacía en el arreglo de aristas para poder registrar sus conexiones más adelante.
-El método agregarArista($vertice1, $vertice2) crea una conexión entre dos vértices. Como es un grafo no dirigido, la conexión se guarda en ambas direcciones (de $vertice1 a $vertice2 y viceversa).
-El método imprimirGrafo() recorre todos los vértices y muestra a qué otros vértices están conectados, lo que permite visualizar la estructura del grafo.
+Se implementan tres formas de recorrer el árbol:
 
-Al final del código, se crea un objeto del tipo Grafo, se agregan los vértices A, B, C y D, y se conectan entre ellos con aristas. Luego se imprime el grafo mostrando cómo está formado. Este tipo de estructura es útil para representar problemas donde hay relaciones o caminos entre elementos, como rutas, redes de computadoras, mapas, etc.
+InOrden: primero recorre el hijo izquierdo, luego muestra el nodo actual y finalmente recorre el hijo derecho. Esto imprime los valores en orden ascendente.
+
+PreOrden: primero muestra el nodo actual, luego recorre el hijo izquierdo y después el derecho. Sirve para reconstruir el árbol.
+
+PostOrden: primero recorre el hijo izquierdo, luego el derecho y finalmente muestra el nodo. Es útil para eliminar nodos o evaluar expresiones.
+
+Al final, se crea un árbol, se insertan varios valores (creando una estructura equilibrada), y se muestran los tres tipos de recorridos para visualizar el contenido del árbol en diferentes órdenes. Esta estructura es útil en programación para organizar datos jerárquicos, realizar búsquedas rápidas y mantener orden de forma eficiente.

@@ -1,1 +1,18 @@
 
+Este código en PHP crea una lista enlazada simple para gestionar una lista de tareas. Cada tarea se almacena en un nodo, y todos los nodos están conectados en secuencia. Es útil cuando necesitas agregar elementos dinámicamente y mantenerlos en orden.
+
+La clase Nodo representa cada tarea. Tiene dos propiedades:
+
+$tarea: el texto de la tarea.
+
+$siguiente: un puntero al siguiente nodo en la lista (inicia como null).
+
+La clase ListaTareas gestiona toda la lista:
+
+$inicio: apunta al primer nodo de la lista.
+
+El método agregarTarea($tarea) añade una nueva tarea al final. Si la lista está vacía, la nueva tarea se vuelve el primer nodo. Si ya hay nodos, se recorre hasta el final y se enlaza el nuevo nodo.
+
+El método imprimirHTML() recorre la lista desde el principio y muestra cada tarea en una lista HTML <ul>, útil para integrarlo fácilmente en una página web.
+
+Al final, se crean tres tareas: "Hacer mercado", "Ir al gimnasio" y "Pasear a la mascota", y se muestran en pantalla. Esta estructura es práctica para representar listas dinámicas sin límite fijo de elementos.
